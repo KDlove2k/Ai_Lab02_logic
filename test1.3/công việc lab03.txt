@@ -1,0 +1,77 @@
+
+
+### **Người 1: Chuẩn bị bộ dữ liệu và xử lý dữ liệu**
+**Công việc:**
+- Tải các bộ dữ liệu từ các liên kết cung cấp (UCI Breast Cancer, Wine Quality, bộ dữ liệu bổ sung).
+- Thực hiện tiền xử lý dữ liệu: làm sạch dữ liệu (xử lý missing values, chuẩn hóa dữ liệu nếu cần thiết).
+- Chia bộ dữ liệu thành các tập huấn luyện và kiểm tra với các tỷ lệ khác nhau (40/60, 60/40, 80/20, 90/10).
+- Xử lý các nhóm chất lượng rượu trong bộ dữ liệu Wine Quality (chia thành 3 nhóm: thấp, tiêu chuẩn, cao).
+- Trực quan hóa phân phối lớp trong tất cả các bộ dữ liệu.
+
+**Kết quả:**
+- Tập dữ liệu đã được chia xong và trực quan hóa phân phối lớp.
+- Cung cấp mã nguồn chuẩn bị dữ liệu cho báo cáo.
+
+---
+
+### **Người 2: Xây dựng và huấn luyện cây quyết định**
+**Công việc:**
+- Áp dụng mô hình cây quyết định (DecisionTreeClassifier) trên các bộ dữ liệu đã chia.
+- Sử dụng các tỷ lệ huấn luyện/kiểm tra đã được phân chia ở bước trước.
+- Thực hiện huấn luyện mô hình cây quyết định và trực quan hóa cây quyết định bằng Graphviz cho từng bộ dữ liệu.
+- Đảm bảo sử dụng thông tin gain (entropy) làm tiêu chí cho việc phân chia trong cây quyết định.
+
+**Kết quả:**
+- Các mô hình cây quyết định đã được huấn luyện.
+- Các cây quyết định trực quan hóa và sẵn sàng để đưa vào báo cáo.
+
+---
+
+### **Người 3: Đánh giá mô hình và phân tích kết quả**
+**Công việc:**
+- Dự đoán kết quả cho các bộ kiểm tra từ các mô hình cây quyết định đã huấn luyện.
+- Tính toán và in báo cáo với `classification_report` và `confusion_matrix`.
+- Phân tích các chỉ số như precision, recall, F1-score, và độ chính xác (accuracy) từ báo cáo phân loại và ma trận nhầm lẫn.
+- Giải thích kết quả và đưa ra các nhận xét về hiệu suất của các mô hình cây quyết định cho từng bộ dữ liệu.
+
+**Kết quả:**
+- Báo cáo phân loại và ma trận nhầm lẫn cho các mô hình.
+- Phân tích chi tiết về hiệu suất của các mô hình.
+
+---
+
+### **Người 4: Thử nghiệm với độ sâu của cây quyết định và tổng hợp kết quả**
+**Công việc:**
+- Thực hiện thử nghiệm với các giá trị độ sâu của cây quyết định (max_depth = None, 2, 3, 4, 5, 6, 7).
+- Huấn luyện mô hình cây quyết định với các giá trị `max_depth` khác nhau và tính toán độ chính xác cho các giá trị này.
+- Vẽ biểu đồ để so sánh độ chính xác của các mô hình với các độ sâu khác nhau.
+- Tổng hợp kết quả từ tất cả các bộ dữ liệu và phân tích sự ảnh hưởng của các tham số như độ sâu cây đến độ chính xác.
+
+**Kết quả:**
+- Các biểu đồ so sánh độ chính xác theo các giá trị độ sâu.
+- Tổng hợp và phân tích kết quả.
+
+---
+
+### **Tổng hợp công việc cho nhóm 4 người**
+
+| Thành viên | Công việc được giao | Tỷ lệ hoàn thành |
+|------------|----------------------|------------------|
+| **Người 1** | Chuẩn bị bộ dữ liệu, chia tập huấn luyện/kiểm tra, xử lý dữ liệu, trực quan hóa phân phối lớp | 100% |
+| **Người 2** | Xây dựng và huấn luyện mô hình cây quyết định, trực quan hóa cây quyết định | 100% |
+| **Người 3** | Đánh giá mô hình, phân tích báo cáo phân loại, confusion matrix | 100% |
+| **Người 4** | Thử nghiệm với độ sâu của cây quyết định, vẽ biểu đồ so sánh độ chính xác, tổng hợp kết quả | 100% |
+
+---
+
+### **Lưu ý khi phân công công việc:**
+
+1. **Giao tiếp thường xuyên**: Đảm bảo tất cả các thành viên giao tiếp tốt với nhau để đảm bảo các bước thực hiện không bị trùng lặp và các phần công việc liên kết chặt chẽ với nhau.
+2. **Đảm bảo báo cáo thống nhất**: Sau khi hoàn thành, các thành viên cần làm việc cùng nhau để tổng hợp các kết quả vào báo cáo chung, chú ý định dạng báo cáo, và xuất ra PDF một cách hợp lý.
+3. **Cung cấp mã nguồn đầy đủ**: Mỗi thành viên sẽ cung cấp mã nguồn cho phần công việc của mình và đảm bảo rằng tất cả các phần công việc được kết hợp trong một file Jupyter Notebook (.ipynb).
+
+---
+
+### **Kết luận**
+
+Phân chia công việc hợp lý giữa các thành viên trong nhóm sẽ giúp đảm bảo bài tập được hoàn thành đúng tiến độ và chất lượng. Mỗi thành viên cần chịu trách nhiệm về một phần công việc cụ thể, nhưng cần phối hợp với nhau để tổng hợp các kết quả và phân tích cuối cùng. Chúc nhóm bạn thành công trong việc hoàn thành bài tập!
